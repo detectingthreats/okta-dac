@@ -21,7 +21,7 @@ flowchart LR
 
 ## Response model
 
-- Containment is deliberately separated from alerting and uses independent object patterns for the user and OAuth paths.
+- Alerting and containment are deliberately separated. A detection always creates an incident, while Tines takes an automated Okta action only when the relevant user or OAuth application also meets the defined response conditions.
 - Only events that meet the suspicious criteria and the bounded response policy can reach an Okta action; other matches still create an incident.
 - The administrator who performed the role grant is never automatically suspended in this proof of concept.
 - Suspension or application deactivation is preferred to deletion because it is reversible and supports investigation while limiting disruption.
