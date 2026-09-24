@@ -11,4 +11,4 @@
 
 | # | Tuning decision | Status | Notes |
 | --- | --- | --- | --- |
-| 1 | Add `https://oauth.legitimatecompany.com/callback` to the approved redirect inventory. | Example | Representative post-deployment allow-list change. It is not implemented because the lab has no real approved integration using this domain; adding an invented exception would weaken the current rule. |
+| 1 | Add `https://oauth.legitimatecompany.com/callback` to the approved redirect inventory. | Example | Representative post-deployment allow-list change. This remains an illustrative tuning example because an exception should not be implemented without a corresponding approved integration. |
