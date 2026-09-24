@@ -1,5 +1,7 @@
 # Okta Detection as Code with Terraform, Sumo Logic and Tines
 
+Author: Matthew Davies
+
 A practical example showing how identity-security detections can be versioned, reviewed and deployed as code. The project uses Terraform to manage Sumo Logic monitors for Okta activity, publishes structured alert context to Tines, and demonstrates policy-gated incident response through GitHub and Okta.
 
 ## What this repository demonstrates
