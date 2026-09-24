@@ -1,7 +1,5 @@
 # Sumo-to-Tines data contract
 
-There is no Object Storage component and no `run_id` in this proof of concept.
-
 Sumo sends one JSON webhook object to Tines:
 
 | Field | Purpose |
@@ -11,7 +9,7 @@ Sumo sends one JSON webhook object to Tines:
 | `detection_severity` | Base analyst-facing classification |
 | `severity_rationale` | Reason the detection uses that classification |
 | `expected_false_positive` | Credible benign explanation for analyst validation |
-| `mitre_techniques` | Relevant MITRE ATT&CK techniques |
+| `mitre_techniques` | Relevant MITRE ATT&CK tactics and techniques |
 | `investigation_playbook` | Concise response and investigation sequence |
 | `query_url` | Link back to Sumo evidence |
 | `query` | Deployed Sumo query |

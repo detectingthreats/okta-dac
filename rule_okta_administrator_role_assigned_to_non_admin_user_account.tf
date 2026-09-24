@@ -34,7 +34,7 @@ EOF
   "detection_severity": "High",
   "severity_rationale": "A single successful administrator-role grant changes control-plane access and can establish a persistent privileged identity.",
   "expected_false_positive": "An authorised third-party support identity or approved emergency elevation that has not yet been added to the managed exception list.",
-  "mitre_techniques": "T1098 - Account Manipulation; T1098.003 - Additional Cloud Roles",
+  "mitre_techniques": "Tactics: TA0003 - Persistence; TA0004 - Privilege Escalation. Techniques: T1098 - Account Manipulation; T1098.003 - Additional Cloud Roles",
   "investigation_playbook": "Validate the approved change; verify the actor independently; pivot on actor ID, session and source IP; review further role grants, API-token creation, application changes and client-secret reads; check the target's subsequent sign-ins and actions; preserve evidence and contain confirmed compromise.",
   "query_url": "{{QueryURL}}",
   "query": "{{Query}}",
